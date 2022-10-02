@@ -6,5 +6,6 @@ from django.contrib.auth.models import AbstractUser
 from utils.models import BaseModel
 
 
+# users custom models
 class User(AbstractUser, BaseModel):
     email = models.EmailField()
