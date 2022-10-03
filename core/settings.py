@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 from datetime import timedelta
 
@@ -73,8 +74,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': "chat",
-        'USER': "root",
-        'PASSWORD': '',
+        'USER': "root_1",
+        'PASSWORD': 'H3re!s@password_th@ty0u&Ine3d!',
         'HOST': 'localhost',
         'PORT': '3306',
     }
@@ -111,7 +112,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
-import os
 
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
